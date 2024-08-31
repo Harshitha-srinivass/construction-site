@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sunray Infra</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;0,700;1,100&family=Roboto:wght@100;300;400;500;700&display=swap');
+  :root {
+    --headerclr: #222533;
+    --mainclr: #ffcb0f;}
+
+  *{ margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    transition: .2s;
+    font-family: 'Roboto', sans-serif;
+ 
+}
+section {
+    display: block;
+}
+html{
+  display: block;
+}
+body {
+  background-color: white;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header{
+padding: 10px 14px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--headerclr);
+    z-index: 1000;
+}
+
+.nav{
+  overflow: hidden;
+  
+}
+
+.nav a {
+  float: left;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 10px;
+}
+.header a {
+  float: left;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav a:hover {
+  background-color: none;
+  color:orange;
+}
+.main {
+  padding: 16px;
+  margin-top: 0px;
+  height: 1500px;
+}
+
+
+
+.topbar-right {
+  float: right;
+}
+.top.search-container  {
+  float:inherit;
+
+}
+.topnav-centered  {
+  float:none;
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  transform: translate(-50%,-50%);
+
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+img {
+  float: right;
+}
+h1{
+  font-style: yellow;
+}
+.logo:hover{
+  background-color: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+
+  }
+
+  .offical{
+    flex: 33%;
+  padding: 30px;
+  align-items: center;
+  background-color: black;
+  margin-top: 6px;
+}
+  
+
+  .p{
+    text-align: justify;
+  }
+  @media (max-width: 767px){
+    html{
+      font-size: 55%;
+    }
+  }
+html {
+    font-size: 80%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.our-gallery{
+        padding: 4rem 7%;
+    }
+    .our-gallery h1{
+        color: var(--headerclr);
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .our-gallery h1 span{
+        color: orange;
+    }
+    .main-gallery{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .inner-gallery{
+        flex: 1 1 300px;
+    }
+    .inner-gallery img{
+        width: 100%;
+        height: 300px;
+        transition: .5s;
+    }
+    .inner-gallery img:hover{
+        transform: translateY(-25px);
+    }
+    .split {
+  height: 100%;
+  width: 50%;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.left {
+  left: 0;
+  
+  float: left;
+}
+
+.right {
+  right: 0;
+  float:right;
+}
+.our-gallerys{
+        padding: 14px 24px;
+    }
+.our-gallerys h1{
+   color: orange;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+        background-color: #222533;
+    }
+    .our-gallerys h1 span{
+        color: orange;
+    }
+</style>
+
+<body>
+
+    <section>
+        <header class="header">
+            <a href="#" id="logo" style="color: orange;">Sunray Infra</a>
+            <navbar class="nav">
+    
+            <a href="file:///C:/Users/Lenovo/OneDrive/Desktop/css/online%20shooping.html">home</a>
+            <a href="file:///C:/Users/Lenovo/OneDrive/Desktop/sunray/gallery.html">gallery</a>
+            <a href="file:///C:/Users/Lenovo/OneDrive/Desktop/css/Projects.html">projects</a>
+            
+            <a href="file:///C:/Users/Lenovo/OneDrive/Desktop/css/contact.html">contact</a>
+        </navbar>
+        <div class="icon-header">
+            <div id="menu-bar" class="fas fa-bars"></div>
+            
+      </header><br><br><br><br>
+      <hr style="color: #f2f2f2;"><br>
+<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-c4ed9890-341c-45da-9dc1-1cfe2929c92a"></div>
+
+<div class="slideshow-container">
+  <hr>
+  <div class="mySlides fade">
+
+    <img src="https://media.licdn.com/dms/image/C511BAQFHeddZ_c5fYA/company-background_10000/0/1584405729045?e=2147483647&v=beta&t=ApzQwprgDokiwdVNxYlr5xrOiy2ipjZvW6Y3y2pXEWo" style="width:100%;height: 400px;" class="center">
+  </div>
+  <div class="mySlides fade">
+    <img src="https://surfacesreporter.com/myuploads/square/20220103043952.jpg" style="width:100%;height:400px;" >
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="https://www.regnews.in/wp-content/uploads/2022/05/hilton-resort.jpg" style="width:100%;height: 400px;">
+  </div>
+</hr>
+  </div>
+
+
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+  </div>
+  <hr style="border: none;">
+  <div>
+  
+    <p style="color: blue;"><img src="C:\Users\Lenovo\OneDrive\Desktop\sunray\13a98c40261296c534a4868124aecf91.jpg" alt="Pineapple" style="width:380px;height:260px;margin-right:20px;padding: 8px;display: flex;">
+    &nbsp;&nbsp;<br> <h1 style="color: brown;margin-left: 78px;font-style: oblique;font-size: 20px;">Discover the Joy <span> of Living </span></h1><br>
+     <p style="font-size: 93.3%;font-style: italic;margin-left: 78px;">
+                                          Embrace a life of purity and wellness by owning a farm plot in the</p>
+<p style="font-size: 93.3%;font-style: italic;margin-left: 78px;">                      lap of nature. Located in Srisailam Highway, Nivriti Farms is the best</p>
+<p style="font-size: 93.3%;font-style: italic;margin-left: 78px;">                     place to own a farm plot and build your dream farm house.</p>
+
+​
+<p style="font-size: 93.3%;font-style: italic;margin-left: 78px;">
+                                         Live fresh. Eat fresh. Breathe fresh.</p> 
+    <p style="color:brown;margin-left: 78px;">Some content..</p><br><br><br><br>
+    </div><br><br><br><hr style="border: none;">
+    
+    <div class="our-gallery">
+      <h1>Our <span>Projects</span></h1>
+      <div class="main-gallery">
+          <div class="inner-gallery">
+              <img src="C:\Users\Lenovo\OneDrive\Desktop\sunray\download (1).jpeg" alt="">
+          </div>
+  
+          <div class="inner-gallery">
+              <img src="C:\Users\Lenovo\OneDrive\Desktop\sunray\download (3).jpeg" alt="">
+          </div>
+  
+          <div class="inner-gallery">
+              <img src="C:\Users\Lenovo\OneDrive\Desktop\sunray\download.jpeg" alt="">
+          </div>
+          <div class="inner-gallery">
+            <img src="C:\Users\Lenovo\OneDrive\Desktop\sunray\download (4).jpeg" alt="">
+        </div>
+  
+</div>
+   </div>
+   <div class="split left">
+    &nbsp;&nbsp;<br><p><h1  style="font-size: 20px;font-style: italic;margin-left: 78px;"> Contact <span>Us</span></h1><br><h4 style="font-size: 93.3%;font-style: italic;margin-left: 78px;">Farmland Address</h4>
+
+   <p style="font-size: 93.3%;font-style: italic;margin-left: 78px;"> Nednur, Srisailam Highway, Hyderabad</p>
+    
+    ​
+    
+   <h4 style="font-size: 93.3%;font-style: italic;margin-left: 78px;"> Corporate Address </h4>
+    
+   <p style="font-size: 93.3%;font-style: italic;margin-left: 78px;"> Floor 3, Bizness Square, Madhapur, Hyderabad </p><br>
+    
+   <h4 style="font-size: 93.3%;font-style: italic;margin-left: 78px;"> contact  </h4>
+    
+   <p style="font-size: 93.3%;font-style: italic;margin-left: 78px;"> +91 8712 86 00 86</p></p></div>
+    &nbsp;&nbsp;<br><div class="split right"> <h1 style="color: brown;margin-left: 78px;font-style: oblique;font-size: 20px;">Project <span> Locations</span></h1><br>
+     <p style="font-size: 93.3%;font-style: italic;margin-left: 78px;">
+      <a class="fa fa-map-marker" style="font-size:20px" href="https://www.google.com/maps/@17.3401595,77.8719342,14z?entry=ttu"></a><i> Vikarabad,Telangana</i> </p>
+<p style="font-size: 93.3%;font-style: italic;margin-left: 78px;">  <a class="fa fa-map-marker" style="font-size:20px" href="https://www.google.com/maps/@17.3401595,77.8719342,14z?entry=ttu"></a><i> Vikarabad,Telangana</i> </p>
+<p style="font-size: 93.3%;font-style: italic;margin-left: 78px;">  <a class="fa fa-map-marker" style="font-size:20px" href="https://www.google.com/maps/@17.3401595,77.8719342,14z?entry=ttu"></a><i> Vikarabad,Telangana</i> </p>
+
+​<br><br><br><br></div>
+    </div><br><hr style="background-color: none;clear: both;border: none;">
+
+<div class="our-gallerys">
+  <h1>Our <span> Location</span></h1>
+  <div class="main-gallery">
+      <div class="inner-gallery">
+        <iframe style="width: 1000px; height: 300px;background-color: white;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.944207327438!2d76.71623827476161!3d11.411595788778401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8bdf036fa2ea1%3A0x6d53c688e33801f1!2sBerry%20Hills%20Resort!5e0!3m2!1sen!2sin!4v1690796127065!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      </div>
+      </div>
+      <center>
+  <footer class="offical" style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center; background-color: black;">
+    
+    <div style="display:flex;flex-direction:row" >
+       
+      <div style="width:50%;"><div><a href="#"><i class="fa fa-facebook-official"></i></a>
+      <a href="#"><i class="fa fa-pinterest-p"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-flickr"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a></div><div> <a style="color: orange;">@Powered by </a><a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Sunray Infra</a></div></div>
+    <br>
+</div>
+</footer>
+</center>
+</div>
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+   
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  
+  </script>
+</section>
+</body>
+</html>
